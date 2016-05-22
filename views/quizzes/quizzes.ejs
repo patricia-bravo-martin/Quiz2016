@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<title>Quiz</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<h2>Quiz: Buscador de preguntas</h2>
+	<p>Las preguntas que contienen el texto introducido son: </p>
+	<p><% for (var i in quiz) { %>
+		<%= quiz[i].question %><br>
+		<% } %></p>
+	<p><a href='/question'>Inténtelo otra vez</a></p>
+</body>
+</html>
